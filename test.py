@@ -1,13 +1,12 @@
 import numpy as np
 
-# Create a sample 3D array
-array_3d = np.array([[[0,0,0],
-                      [0,1, 6]],
-                     
-                     [[7, 8, 9],
-                      [10, 11, 12]]])
+# Create a sample 3D matrix
+matrix_3d = np.array([
+    [[1, 2, 3], [4, 5, 6]],
+    [[7, 8, 9], [10, 11, 12]]
+])
 
-# Sum along a specified axis (e.g., axis=2)
-sum_result = np.sum(array_3d, axis=(1, 2))
+# Sum along the second axis (axis=1) to get a 1D array
+sum_array = np.sum(matrix_3d, axis=(0,2))
 
-print(sum_result)
+print(sum_array)
